@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "966580134145",
+    "firebase_url": "https://kmitbuysell.firebaseio.com",
+    "project_id": "kmitbuysell",
+    "storage_bucket": "kmitbuysell.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:966580134145:android:db6afc6c105718b5",
+        "android_client_info": {
+          "package_name": "com.example.kmitbuysell"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "966580134145-26u270ogqm2tk62lmsbqd8jsddid881t.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.kmitbuysell",
+            "certificate_hash": "da1c225936f42acec3ce1ed08992e256f44de92f"
+          }
+        },
+        {
+          "client_id": "966580134145-u7sihpeo3uqoe1ek69ljohvu1smno56k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB1DeCyvnZVxWjO3_EhgHz2UISpRVMFY84"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "966580134145-u7sihpeo3uqoe1ek69ljohvu1smno56k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<item
+    android:id="@+id/Years"
+    android:title="Years"
+    app:showAsAction="collapseActionView">
+</item>
+    <item
+        android:id="@+id/SellingType"
+        android:title="Selling Type"
+        app:showAsAction="collapseActionView">
+        <menu>
+            <item
+                android:id="@+id/Sell"
+                android:title="Sell"
+                app:showAsAction="collapseActionView">
+            </item>
+            <item
+                android:id="@+id/Share"
+                android:title="Share"
+                app:showAsAction="collapseActionView">
+            </item>
+            <item
+                android:id="@+id/free"
+                android:title="Get it for free"
+                app:showAsAction="collapseActionView">
+            </item>
+        </menu>
+    </item>
+</menu>

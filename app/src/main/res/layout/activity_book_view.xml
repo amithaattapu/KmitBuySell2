@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".BookViewActivity">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="190dp"
+            android:layout_height="209dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_launcher_foreground"
+            android:scaleType="fitXY"
+            />
+
+        <TextView
+            android:id="@+id/Bookname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="8dp"
+            android:gravity="center"
+            android:text="Book Name"
+            android:textSize="25dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+        <TextView
+            android:id="@+id/year"
+            android:layout_width="128dp"
+            android:layout_height="23dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="68dp"
+            android:gravity="center"
+            android:text="Year"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Bookname" />
+
+        <TextView
+            android:id="@+id/textCost"
+            android:layout_width="113dp"
+            android:layout_height="23dp"
+            android:layout_marginStart="44dp"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:text="Price"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/year" />
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        <TextView
+            android:id="@+id/texttype"
+            android:layout_width="94dp"
+            android:layout_height="27dp"
+            android:layout_marginStart="52dp"
+            android:layout_marginTop="24dp"
+            android:gravity="center"
+            android:text="Type"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textCost" />
+
+        <Button
+            android:id="@+id/chat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="68dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/custom_button"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="Contact Seller"
+            android:textColor="#FFFF"
+            android:textSize="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/texttype" />
+
+        <com.like.LikeButton
+            android:id="@+id/heart_button"
+            android:layout_width="45dp"
+            android:layout_height="42dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="208dp"
+            android:layout_marginEnd="8dp"
+            android:background="#FFFF"
+            app:icon_size="25dp"
+            app:icon_type="heart"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.911"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/Year1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="TextView"
+            app:layout_constraintBottom_toTopOf="@+id/chat"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.35"
+            app:layout_constraintStart_toEndOf="@+id/year"
+            app:layout_constraintTop_toBottomOf="@+id/Bookname"
+            app:layout_constraintVertical_bias="0.291" />
+
+        <TextView
+            android:id="@+id/price1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="TextView"
+            app:layout_constraintBottom_toTopOf="@+id/chat"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.346"
+            app:layout_constraintStart_toEndOf="@+id/textCost"
+            app:layout_constraintTop_toBottomOf="@+id/Year1"
+            app:layout_constraintVertical_bias="0.089" />
+
+        <TextView
+            android:id="@+id/Type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="TextView"
+            app:layout_constraintBottom_toTopOf="@+id/chat"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.384"
+            app:layout_constraintStart_toEndOf="@+id/texttype"
+            app:layout_constraintTop_toBottomOf="@+id/price1"
+            app:layout_constraintVertical_bias="0.258" />
+
+        <TextView
+            android:id="@+id/branch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="Branch"
+            app:layout_constraintBottom_toTopOf="@+id/year"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.184"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Bookname" />
+
+        <TextView
+            android:id="@+id/branch1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="TextView"
+            app:layout_constraintBottom_toTopOf="@+id/Year1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/branch"
+            app:layout_constraintTop_toBottomOf="@+id/Bookname" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
